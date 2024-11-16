@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffecb3; /* Light yellow background */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    margin: 0;
+}
+
+.game-container {
+    background-color: #ff6f61; /* Funky coral background */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    width: 350px;
+    border: 4px dashed #fff; /* Dashed border */
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #d95f48; /* Add shadow for depth */
+}
+
+#instructions {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffcc80; /* Funky orange border */
+    outline: none;
+    font-size: 16px;
+    background-color: #fff;
+    color: #ff6f61; /* Coral text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: border-color 0.3s, transform 0.2s;
+}
+
+select:focus {
+    border-color: #ff6f61; /* Coral color when focused */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffcc80; /* Funky orange border */
+    outline: none;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffecb3; /* Light yellow background */
+    color: #333;
+    transition: transform 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #ff6f61; /* Coral color when focused */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+button {
+    background-color: #fff;
+    color: #ff6f61;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e34525;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
